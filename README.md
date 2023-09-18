@@ -5,7 +5,11 @@ calculates the delivery fee for food couriers based on regional base fee, vehicl
 conditions.
 
 One available endpoint:
+
 /delivery
+
 required parameters:
+
 (String) city - tartu, tallinn, pärnu
+
 (String) vehicle - car, scooter, bike
