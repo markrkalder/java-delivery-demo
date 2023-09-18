@@ -10,3 +10,5 @@ One available endpoint:
 required parameters:  
 (String) city - tartu, tallinn, pärnu  
 (String) vehicle - car, scooter, bike  
+
+Database xml file import frequency configurable with cron expression in application.properties (weatherdata.cron value)
