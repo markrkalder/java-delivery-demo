@@ -10,6 +10,16 @@ import java.sql.Timestamp;
 @Entity
 public class Weather {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+    private int WMO;
+    private float airTemperature;
+    private float windSpeed;
+    private String phenomenon;
+    Timestamp timestamp;
+
     public Weather(){}
 
     /**
@@ -50,16 +60,4 @@ public class Weather {
     public String getPhenomenon() {
         return phenomenon;
     }
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    private String name;
-    private int WMO;
-    private float airTemperature;
-    private float windSpeed;
-    private String phenomenon;
-    Timestamp timestamp;
-
-
 }
